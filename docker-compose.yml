@@ -1,0 +1,13 @@
+version: '4.14.1'
+services:
+  mysql:
+    image: mysql:8.0
+    restart: always
+    container_name: mydbsequelize
+    environment:
+      MYSQL_ROOT_PASSWORD: 2456Aerb
+      MYSQL_DATABASE: sequelizeapirest
+    ports:
+      - 3306:3306
+    volumes:
+      - ~/Documents/vol:/var/lib/musql
